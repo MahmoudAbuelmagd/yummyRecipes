@@ -1,0 +1,87 @@
+@layer bootstrap, mainStyling;
+@layer mainStyling{
+  
+  body{
+    background-color: #0d0d0d;
+  }
+  i,
+  li{
+    cursor: pointer;
+  }
+  .imgContainer{
+    height: 250px;
+    cursor: pointer;
+  }
+  .imgContainer img{
+    object-fit: cover;
+  }
+  .layer{
+    background-color: #f9f6f6ca;
+    transition: all 0.5s;
+    top: 100%;
+    
+  }
+  .imgContainer:hover .layer{
+    top: 0;
+  }
+  aside{
+    width: 320px;
+  }
+  .nav-menu{
+    background-color: #0d0d0d;
+    padding: 40px;
+    display: none;
+  }
+  .nav-header{
+    background-color: #f9f6f6;
+  }
+  .nav-header picture img{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+  }
+  .form-control{
+    background-color: #0d0d0d;
+    border-color: #fff;
+    color: #f9f6f6;
+  }
+  .form-control::placeholder{
+    color: #f9f6f6;
+  }
+  .loading{
+    display:flex;
+  }
+  .loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+  }
+  .loader::after {
+    animation-delay: 1s;
+  }
+  
+  @keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+}

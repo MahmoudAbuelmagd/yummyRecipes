@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Yummyyy</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      @import url('./css/bootstrap.min.css') layer(bootstrap);
+    </style>
+  </head>
+  <body>
+    <div class="loading position-fixed z-3 w-100 vh-100 start-0 top-0 bg-black d-none justify-content-center align-items-center">
+      <span class="loader"></span>
+    </div>
+    <aside id="sidebar" class="d-flex position-fixed min-vh-100 z-2">
+      <div class="nav-menu min-vh-100 text-white flex-column justify-content-between">
+        <ul class="links list-unstyled">
+          <li class="py-2 fs-5 fw-light" id="searchLi"> Search </li>
+          <li class="py-2 fs-5 fw-light" id="catLi"> Categories </li>
+          <li class="py-2 fs-5 fw-light" id="areaLi"> Area </li>
+          <li class="py-2 fs-5 fw-light" id= "ingredientsLi"> Ingredients </li>
+          <li class="py-2 fs-5 fw-light" id="contactLi"> Contact Us </li>
+        </ul>
+        <div class="sidebar-footer ">
+          <div class="icons text-white">
+            <i class="fa-brands fa-facebook-f me-2"></i>
+            <i class="fa-brands fa-twitter me-2"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p> Copyright Â© 2019 All Rights
+              Reserved.</p>
+        </div>
+      </div>
+      <div class="nav-header vh-100 py-4 px-2 d-flex flex-column justify-content-between">
+        <picture>
+          <img src="images/logo.png" alt="">
+        </picture>
+          <i class="fa-solid fa-bars  fa-3x text-center" id="toggleSide"></i> <!-- times -->
+        <div class="foot-icons d-flex flex-column align-items-center">
+          <i class="fa-solid fa-globe mb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </aside>
+    <section class="mainContent " >
+      <div class="container py-5">
+        <div class="row mb-4" id="searchHolder">
+        
+        </div>
+        <div class="row g-3" id="pageContent">
+      </div>
+    </div>
+  </section>
+  <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
